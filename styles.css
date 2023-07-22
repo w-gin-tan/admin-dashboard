@@ -6,7 +6,7 @@
 .dashboard {
     min-height: 100vh;
     display: grid;
-    grid-template: minmax(150px, 15%) 1fr / minmax(250px, 10%) 1fr;
+    grid-template: minmax(150px, 16%) 1fr / minmax(250px, 10%) 1fr;
 }
 
 .sidebar {
@@ -38,10 +38,6 @@
     background-color: lightcoral;
     display: grid;
     grid-template: 65px / minmax(700px, 70%) 1fr;
-}
-
-.header > * {
-    border: 1px solid black;
 }
 
 .search {
