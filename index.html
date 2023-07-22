@@ -6,11 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- get the required files from 3rd party sources -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- use the font -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div class="dashboard">
-        <div class="sidebar"></div>
-        <div class="header"></div>
+        <div class="sidebar">
+            <p class="title">Dashboard</p>
+            <div class="block-one">
+                <p>Home</p>
+                <p>Profile</p>
+                <p>Messages</p>
+                <p>History</p>
+                <p>Tasks</p>
+                <p>Communities</p>
+            </div>
+            <div class="block-two">
+                <p>Settings</p>
+                <p>Support</p>
+                <p>Privacy</p>
+            </div>
+        </div>
+        <div class="header">
+            <div class="search">
+                <div class="search-icon"></div>
+                <div class="search-bar"></div>
+            </div>
+            <div class="notif">
+                <div class="bell"></div>
+                <div class="profile-pic"></div>
+                <div class="name">Morgan Oakley</div>
+            </div>
+            <div class="user-info">
+                <div class="profile-pic"></div>
+                <div class="greeting">Hi there,</div>
+                <div class="user-name">Morgan Oakley (@morgan)</div>
+            </div>
+            <div class="buttons">
+                <button class="new">New</button>
+                <button class="upload">Upload</button>
+                <button class="share">Share</button>
+            </div>
+        </div>
         <div class="content"></div>
     </div>
 </body>

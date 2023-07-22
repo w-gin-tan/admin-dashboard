@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
 }
 
 .dashboard {
     min-height: 100vh;
     display: grid;
-    grid-template: minmax(150px, 20%) 1fr / minmax(250px, 20%) 1fr;
+    grid-template: minmax(150px, 15%) 1fr / minmax(250px, 10%) 1fr;
 }
 
 .sidebar {
@@ -20,18 +19,14 @@
     display: grid;
     justify-content: center;
     grid-template-rows: 
-        minmax(50px, 10%)
-        minmax(100px, 25%)
+        minmax(75px, 10%)
+        minmax(225px, 25%)
         minmax(280px, 65%);
-}
-
-.sidebar > * {
-    border: 1px solid black;
 }
 
 .sidebar .title {
     font-size: 24px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .sidebar > div > p {
@@ -41,6 +36,114 @@
 
 .header {
     background-color: lightcoral;
+    display: grid;
+    grid-template: 65px / minmax(700px, 70%) 1fr;
+}
+
+.header > * {
+    border: 1px solid black;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: minmax(115px, 10%) 1fr;
+}
+
+.search-icon {
+    margin-top: 25px;
+    margin-left: 70px;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+}
+
+.search-bar {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: gray;
+    width: 90%;
+    height: 30px;
+}
+
+.notif {
+    display: grid;
+    grid-template-columns: 
+        minmax(250px, 40%)
+        minmax(50px, 10%)
+        minmax(225px, 50%);
+}
+
+.notif .bell {
+    margin-top: 25px;
+    margin-left: 200px;
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+}
+
+.notif .profile-pic {
+    margin-top: 15px;
+    height: 45px;
+    width: 45px;
+    border-radius: 25px;
+    background-color: green;
+}
+
+.notif .name {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.user-info {
+    display: grid;
+    grid-template: repeat(2, minmax(40px, 1fr)) / minmax(150px, 15%) 1fr;
+}
+
+.user-info .profile-pic {
+    grid-row: 1 / 3;
+    margin-left: 75px;
+    margin-top: 15px;
+    height: 60px;
+    width: 60px;
+    background-color: green;
+    border-radius: 35px;
+}
+
+.user-info .greeting {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.user-info .user-name {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+}
+
+.buttons > button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.buttons .new {
+    margin-left: 110px;
 }
 
 .content {
