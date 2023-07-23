@@ -15,13 +15,13 @@
         columns: 1 / 2
         rows: 1 / 3
     */
-    grid-area: 1 / 1 / 3 / 2;
+    grid-row: 1 / 3;
     display: grid;
     justify-content: center;
     grid-template-rows: 
-        minmax(75px, 10%)
-        minmax(225px, 25%)
-        minmax(280px, 65%);
+        minmax(100px, 5%)
+        minmax(325px, 10%)
+        minmax(100px, 1fr);
 }
 
 .sidebar .title {
@@ -37,7 +37,7 @@
 .header {
     background-color: lightcoral;
     display: grid;
-    grid-template: 65px / minmax(700px, 70%) 1fr;
+    grid-template: 65px / minmax(500px, 70%) 1fr;
 }
 
 .search {
@@ -143,5 +143,33 @@
 }
 
 .content {
-    background-color: lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: min-content 1fr;
+    background-color: lightgray;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.content .projects {
+    grid-row: 1 / 3;
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.projects h3 {
+    margin-bottom: 1rem;
+}
+
+.content .cards > * {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-left: 10px solid darksalmon;
 }
