@@ -6,7 +6,7 @@
 .dashboard {
     min-height: 100vh;
     display: grid;
-    grid-template: minmax(150px, 16%) 1fr / minmax(250px, 10%) 1fr;
+    grid-template: minmax(165px, 15%) 1fr / minmax(300px, 10%) 1fr;
 }
 
 .sidebar {
@@ -19,19 +19,17 @@
     display: grid;
     justify-content: center;
     grid-template-rows: 
-        minmax(100px, 5%)
+        minmax(90px, 2.5%)
         minmax(325px, 10%)
         minmax(100px, 1fr);
 }
 
 .sidebar .title {
-    font-size: 24px;
     padding-top: 20px;
 }
 
-.sidebar > div > p {
-    font-size: 18px;
-    padding-top: 10px;
+.sidebar > div > h2 {
+    padding-top: 15px;
 }
 
 .header {
@@ -108,13 +106,13 @@
 }
 
 .user-info .greeting {
-    margin-top: 25px;
+    margin-top: 20px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .user-info .user-name {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bolder;
 }
 
