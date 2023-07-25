@@ -192,12 +192,29 @@
 
 .announcement .card {
     background-color: white;
-    height: 450px;
     border-radius: 0.5rem;
+    padding: 2rem;
+    display: grid;
+}
+
+.announcement .card .info .heading {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.announcement .card .info {
+    padding: 10px
+}
+
+.announcement .card .info:first-child,
+.announcement .card .info:first-child + .info {
+    border-bottom: 1px solid grey;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .trending .card {
     background-color: white;
-    height: 370px;
     border-radius: 0.5rem;
 }
