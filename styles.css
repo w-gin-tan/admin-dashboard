@@ -140,10 +140,11 @@
 
 .content {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 0.3fr;
     grid-template-rows: min-content 1fr;
     background-color: lightgray;
     padding: 1rem;
+    padding-right: 1.5rem;
     gap: 1.5rem;
 }
 
@@ -153,10 +154,9 @@
 
 .projects .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 250px;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-auto-rows: 375px;
+    gap: 2rem;
 }
 
 .projects h3,
@@ -175,12 +175,12 @@
 
 .announcement .card {
     background-color: white;
-    padding: 10rem;
+    height: 450px;
     border-radius: 0.5rem;
 }
 
 .trending .card {
     background-color: white;
-    padding: 9rem;
+    height: 370px;
     border-radius: 0.5rem;
 }
