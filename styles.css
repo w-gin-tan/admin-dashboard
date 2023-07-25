@@ -119,7 +119,7 @@
     grid-template-columns: 170px 135px 150px;
 }
 
-.buttons > button {
+.buttons button {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -157,6 +157,23 @@
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-auto-rows: 375px;
     gap: 2rem;
+}
+
+.projects .cards .card {
+    display: grid;
+}
+
+.top .heading {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.bottom {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: end;
+    gap: 10px;
 }
 
 .projects h3,
