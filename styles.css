@@ -148,7 +148,7 @@
     grid-template-rows: min-content 1fr;
     background-color: lightgray;
     padding: 1rem;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .content .projects {
@@ -159,12 +159,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 250px;
-    gap: 2rem;
+    gap: 1.5rem;
     padding-bottom: 2rem;
 }
 
-.projects h3 {
-    margin-bottom: 1rem;
+.projects h3,
+.announcement h3,
+.trending h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .content .cards > * {
@@ -172,4 +175,16 @@
     padding: 2rem;
     border-radius: 0.5rem;
     border-left: 10px solid darksalmon;
+}
+
+.announcement .card {
+    background-color: white;
+    padding: 10rem;
+    border-radius: 0.5rem;
+}
+
+.trending .card {
+    background-color: white;
+    padding: 9rem;
+    border-radius: 0.5rem;
 }
