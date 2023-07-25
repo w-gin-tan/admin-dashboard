@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --trending-card-margin: 5px 0 0 20px;
+}
+
 .dashboard {
     min-height: 100vh;
     display: grid;
@@ -16,7 +20,7 @@
     justify-content: center;
     grid-template-rows: 
         minmax(90px, 2.5%)
-        minmax(325px, 10%)
+        minmax(350px, 10%)
         minmax(100px, 1fr);
 }
 
@@ -24,8 +28,8 @@
     padding-top: 20px;
 }
 
-.sidebar > div > h2 {
-    padding-top: 15px;
+.sidebar div h2 {
+    padding-top: 20px;
 }
 
 .header {
@@ -87,12 +91,12 @@
     font-weight: bolder;
 }
 
-.user-info {
+.header .user-info {
     display: grid;
     grid-template: repeat(2, 40px) / 135px 1fr;
 }
 
-.user-info .profile-pic {
+.header .user-info .profile-pic {
     grid-row: 1 / 3;
     margin-left: 55px;
     margin-top: 20px;
@@ -102,13 +106,13 @@
     border-radius: 35px;
 }
 
-.user-info .greeting {
+.header .user-info .greeting {
     margin-top: 30px;
     font-weight: 600;
     font-size: 14px;
 }
 
-.user-info .user-name {
+.header .user-info .user-name {
     margin-top: 10px;
     font-size: 24px;
     font-weight: bolder;
@@ -217,4 +221,32 @@
 .trending .card {
     background-color: white;
     border-radius: 0.5rem;
+    display: grid;
+    padding: 1rem;
+}
+
+.trending .card .user-info {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.trending .card .user-info .profile-pic {
+    grid-row: 1 / 3;
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: green;
+}
+
+.trending .card .user-info .user-name {
+    font-size: 20px;
+    margin: var(--trending-card-margin);
+}
+
+.trending .card .user-info .description {
+    color: gray;
+    margin: var(--trending-card-margin);
 }
