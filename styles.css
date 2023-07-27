@@ -166,6 +166,7 @@
     color: white;
     font-weight: 600;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .buttons .new {
@@ -207,7 +208,13 @@
     display: grid;
     grid-auto-flow: column;
     place-content: end;
-    gap: 10px;
+    gap: 20px;
+}
+
+.bottom svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
 
 .projects h3,
