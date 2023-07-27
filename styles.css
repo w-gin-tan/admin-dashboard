@@ -17,7 +17,6 @@
     background-color: lightblue;
     grid-row: 1 / 3;
     display: grid;
-    justify-content: center;
     grid-template-rows: 
         minmax(90px, 2.5%)
         minmax(350px, 10%)
@@ -25,7 +24,20 @@
 }
 
 .sidebar .title {
-    padding-top: 20px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.sidebar .title h1 {
+    align-self: center;
+    padding-left: 10px;
+}
+
+.sidebar .title svg {
+    height: 75px;
+    width: 75px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .sidebar div h2 {
@@ -240,7 +252,6 @@
     width: 60px;
     border-radius: 30px;
     background-color: green;
-    /* justify-content of picture center */
 }
 
 .trending .card .user-info .user-name {
